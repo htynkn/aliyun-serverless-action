@@ -4,6 +4,8 @@ author: "Yunkun Huang"
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.functionFolder }}
 branding:
   icon: "upload-cloud"
   color: "blue"

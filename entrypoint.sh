@@ -16,6 +16,10 @@ function skip() {
     exit 0
 }
 
+FOLDER_NAME=$1
+cd $FOLDER_NAME
+print_info "use function in folder `$FOLDER_NAME`"
+
 print_info 'show files'
 ls
 
