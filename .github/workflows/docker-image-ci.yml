@@ -12,12 +12,11 @@ on:
       - master
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-18.04
 
     steps:
       - uses: actions/checkout@v2
-
       - name: build
         env:
           DOCKER_IMAGE: docker.pkg.github.com/${{ github.repository }}/action:latest
@@ -27,13 +26,13 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-
       - name: shellcheck
         run: shellcheck ./entrypoint.sh
 
   hadolint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: burdzwastaken/hadolint-action@1.5.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
