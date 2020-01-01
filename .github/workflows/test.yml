@@ -25,3 +25,6 @@ jobs:
           ACCESS_KEY_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
         with:
           functionFolder: test/
+      - run: wget https://135603.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/http-demo/nodejs8/ -O response.json
+      - run: test -f response.json
+
