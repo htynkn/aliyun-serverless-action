@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "8.x"
-      - run: npm install
+      - run: cd test && npm install
       - uses: htynkn/aliyun-serverless-action@master
         env:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}

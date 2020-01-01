@@ -28,3 +28,7 @@ ls
 
 print_info 'show fun info'
 fun -v
+
+print_info 'start deploy function'
+fun deploy
+print_info 'deploy success'
