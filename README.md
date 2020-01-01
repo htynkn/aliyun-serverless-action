@@ -1,3 +1,8 @@
+![GitHub Actions status](https://github.com/htynkn/aliyun-serverless-action/workflows/ci/badge.svg)
+[![License](https://img.shields.io/github/license/htynkn/aliyun-serverless-action.svg)](https://github.com/htynkn/aliyun-serverless-action/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/release/htynkn/aliyun-serverless-action.svg)](https://github.com/htynkn/aliyun-serverless-action/releases/latest)
+[![GitHub release date](https://img.shields.io/github/release-date/htynkn/aliyun-serverless-action.svg)](https://github.com/htynkn/aliyun-serverless-action/releases)
+
 # Aliyun Serverless Action
 
 GitHub Actions for Aliyun Serverless 🚀 Deploy function automaticlly.
