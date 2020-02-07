@@ -21,7 +21,7 @@ jobs:
         env:
           DOCKER_IMAGE: docker.pkg.github.com/${{ github.repository }}/action:latest
         run: |
-          docker build . --file Dockerfile --tag ${DOCKER_IMAGE}
+          docker build . --file Dockerfile-source --tag ${DOCKER_IMAGE}
   shellcheck:
     runs-on: ubuntu-18.04
     steps:
