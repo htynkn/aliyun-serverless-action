@@ -3,7 +3,7 @@ description: "GitHub Actions for Aliyun Serverless 🚀 Deploy function automati
 author: "Yunkun Huang"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "Dockerfile-prebuilt"
   args:
     - ${{ inputs.functionFolder }}
 branding:
