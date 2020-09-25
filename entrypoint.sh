@@ -23,5 +23,5 @@ print_info 'show fun client version'
 fun --version
 
 print_info 'start deploy function'
-fun deploy
+fun deploy -y
 print_info 'deploy success'
