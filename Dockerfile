@@ -1,1 +1,1 @@
-FROM htynkn/aliyun-serverless-action:1.0.2
+FROM htynkn/aliyun-serverless-action:1.0.3
